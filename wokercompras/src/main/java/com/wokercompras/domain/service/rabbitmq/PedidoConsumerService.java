@@ -14,16 +14,10 @@ import org.springframework.stereotype.Service;
 @Slf4j
 @Service
 public class PedidoConsumerService {
-
     @Autowired
     private ObjectMapper objectMapper;
-
     @Autowired
     private PedidoService pedidoService;
-
-    @Autowired
-    private PedidoProducerService producerService;
-
     @SneakyThrows
     @RabbitListener(queues = {"${rabbitmq.queue.name-efetuada}"})
     public void consumer(@Payload Message payload){

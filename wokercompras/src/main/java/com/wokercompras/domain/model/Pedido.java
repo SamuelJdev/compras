@@ -5,7 +5,6 @@ import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import lombok.*;
 
-import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
@@ -24,11 +23,8 @@ public class Pedido implements Serializable {
     private String email;
     private Long produto;
     private BigDecimal valor;
-    @JsonFormat(pattern = "yyyy-MM-dd")
     private Date dataCompra;
     private String cpfCliente;
-    @Embedded
     private Endereco endereco;
-    @Embedded
     private Cartao cartao;
 }

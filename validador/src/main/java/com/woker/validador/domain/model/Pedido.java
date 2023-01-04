@@ -23,7 +23,6 @@ public class Pedido implements Serializable {
     private String email;
     private Long produto;
     private BigDecimal valor;
-    @JsonFormat(pattern = "yyyy-MM-dd")
     private Date dataCompra;
     private String cpfCliente;
     private Endereco endereco;

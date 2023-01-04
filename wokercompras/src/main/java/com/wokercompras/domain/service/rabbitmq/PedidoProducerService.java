@@ -10,10 +10,8 @@ import org.springframework.stereotype.Service;
 public class PedidoProducerService {
     @Autowired
     private RabbitTemplate rabbitTemplate;
-
     @Value("${rabbitmq.routingkey}")
     private String routingkey;
-
     @SneakyThrows
     public void sendMessage(String message) {
         rabbitTemplate.convertAndSend(routingkey, message);
