@@ -1,19 +1,19 @@
-package mscompras.compra.service.rabbitmq;
+package mscompras.compra.api.rabbitmq;
 
 import org.springframework.amqp.core.Queue;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
 
 @Configuration
 public class RabbitmqConfig {
-
     @Value("${queue.name}")
     private String queueName;
 
-    public Queue queue(){
-        return new Queue(,true) {
-
-        }
+    @Value("${rabbitmq.routingkey}")
+    private String routingkey;
+    @Bean
+    public Queue queue() {
+        return new Queue(queueName, false);
     }
 }

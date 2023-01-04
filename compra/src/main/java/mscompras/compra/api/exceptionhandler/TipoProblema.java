@@ -1,4 +1,4 @@
-package mscompras.compra.service.exceptionhandler;
+package mscompras.compra.api.exceptionhandler;
 
 import lombok.Getter;
 

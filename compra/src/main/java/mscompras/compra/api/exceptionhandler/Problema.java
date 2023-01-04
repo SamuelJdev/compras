@@ -1,4 +1,4 @@
-package mscompras.compra.service.exceptionhandler;
+package mscompras.compra.api.exceptionhandler;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;

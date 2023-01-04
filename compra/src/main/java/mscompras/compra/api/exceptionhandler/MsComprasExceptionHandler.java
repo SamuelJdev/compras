@@ -1,4 +1,4 @@
-package mscompras.compra.service.exceptionhandler;
+package mscompras.compra.api.exceptionhandler;
 
 import com.fasterxml.jackson.databind.JsonMappingException.Reference;
 import com.fasterxml.jackson.databind.exc.InvalidFormatException;
