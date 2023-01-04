@@ -7,6 +7,7 @@ import lombok.*;
 
 import javax.persistence.*;
 import javax.validation.constraints.Min;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -25,9 +26,9 @@ public class Pedido implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @NotNull
+    @NotBlank
     private String nome;
-    @NotNull
+    @NotBlank
     private String email;
     @NotNull
     @Min(1)
@@ -38,7 +39,7 @@ public class Pedido implements Serializable {
     @NotNull
     @JsonFormat(pattern = "yyyy-MM-dd")
     private Date dataCompra;
-    @NotNull
+    @NotBlank
     private String cpfCliente;
     @Embedded
     private Endereco endereco;
