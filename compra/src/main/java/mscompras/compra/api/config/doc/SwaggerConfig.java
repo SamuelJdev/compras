@@ -1,4 +1,4 @@
-package mscompras.compra.api.config;
+package mscompras.compra.api.config.doc;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

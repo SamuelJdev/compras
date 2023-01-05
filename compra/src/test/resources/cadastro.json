@@ -1,0 +1,15 @@
+{
+  "email": "luciana@gmail.com",
+  "nome": "luciana",
+  "produto": 3,
+  "valor": 2000,
+  "data_compra": "2021-12-10",
+  "cpf_cliente": "111.249.249-12",
+  "endereco": {
+    "cep":"69080-122"
+  },
+  "cartao": {
+    "numero":"454554",
+    "limite_disponivel": 2000
+  }
+}
