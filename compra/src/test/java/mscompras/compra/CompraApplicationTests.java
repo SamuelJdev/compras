@@ -27,7 +27,7 @@ class CompraApplicationTests {
 				.port(port)
 				.contentType(ContentType.JSON)
 				.accept(ContentType.JSON)
-				.body(FileUtils.readFileContent("cadastro.json"))
+				.body(FileUtils.readFileContent("cadastro-post.json"))
 				.when()
 				.post()
 				.then()
